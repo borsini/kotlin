@@ -57,28 +57,28 @@ public class SDKDownloader {
     }
 
     public void downloadPlatform() {
-        download("https://dl-ssl.google.com/android/repository/android-" + ANDROID_VERSION + "_r04.zip", platformZipPath);  //Same for all platforms
+        download("https://cache-redirector.jetbrains.com/dl-ssl.google.com/android/repository/android-" + ANDROID_VERSION + "_r04.zip", platformZipPath);  //Same for all platforms
     }
 
     private void downloadAbi() {
-        download("https://dl.google.com/android/repository/sys-img/android/armeabi-v7a-" + ANDROID_VERSION + "_r05.zip", armImage);  //Same for all platforms
-        download("https://dl.google.com/android/repository/sys-img/android/x86-" + ANDROID_VERSION + "_r06.zip", x86Image);  //Same for all platforms
+        download("https://cache-redirector.jetbrains.com/dl.google.com/android/repository/sys-img/android/armeabi-v7a-" + ANDROID_VERSION + "_r05.zip", armImage);  //Same for all platforms
+        download("https://cache-redirector.jetbrains.com/dl.google.com/android/repository/sys-img/android/x86-" + ANDROID_VERSION + "_r06.zip", x86Image);  //Same for all platforms
     }
 
     public void downloadPlatformTools() {
-        download(getDownloadUrl("https://dl-ssl.google.com/android/repository/platform-tools_r" + PLATFORM_TOOLS), platformToolsZipPath);
+        download(getDownloadUrl("https://cache-redirector.jetbrains.com/dl-ssl.google.com/android/repository/platform-tools_r" + PLATFORM_TOOLS), platformToolsZipPath);
     }
 
     public void downloadSdkTools() {
-        download(getDownloadUrl("https://dl.google.com/android/repository/tools_r" + SDK_TOOLS), skdToolsZipPath);
+        download(getDownloadUrl("https://cache-redirector.jetbrains.com/dl.google.com/android/repository/tools_r" + SDK_TOOLS), skdToolsZipPath);
     }
 
     public void downloadBuildTools() {
-        download(getDownloadUrl("https://dl.google.com/android/repository/build-tools_r" + BUILD_TOOLS), buildToolsZipPath);
+        download(getDownloadUrl("https://https://cache-redirector.jetbrains.com/dl.google.com/android/repository/build-tools_r" + BUILD_TOOLS), buildToolsZipPath);
     }
 
     public void downloadGradle() {
-        download("https://services.gradle.org/distributions/gradle-" + GRADLE_VERSION + "-bin.zip", gradleZipPath);
+        download("https://https://cache-redirector.jetbrains.com/services.gradle.org/distributions/gradle-" + GRADLE_VERSION + "-bin.zip", gradleZipPath);
     }
 
     private static String getDownloadUrl(String prefix) {
